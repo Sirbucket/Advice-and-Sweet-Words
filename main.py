@@ -65,10 +65,13 @@ def run_program():
     close = input("Type enter for a wonderful message. (Type close to quit): ")
     for r in response_list:
         if close == "close":
+            print("\n Have a wonderful day, go get em tiger!")
             return;
         if close == "Close":
+            print("\n Have a wonderful day, go get em tiger!")
             return;
         print_response(r);
         close = input("Type enter for a wonderful message. (Type close to quit): ")
+    print("\n Have a wonderful day, go get em tiger!")
     
 run_program();
