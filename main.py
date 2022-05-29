@@ -62,13 +62,13 @@ def print_response(response):
 def run_program():
     random.shuffle(response_list);
     start_runtime();
-    close = input("Type enter for a wonderful message. (Type close to quit): ").lower();
+    close = str(input("Type enter for a wonderful message. (Type close to quit): ").lower());
     for r in response_list:
         if close == "close":
             print("\n Have a wonderful day, go get em tiger!");
             return;
         print_response(r);
-        close = input("Type enter for a wonderful message. (Type close to quit): ").lower();
+        close = str(input("Type enter for a wonderful message. (Type close to quit): ").lower());
     print("\n Have a wonderful day, go get em tiger!");
     
 run_program();
